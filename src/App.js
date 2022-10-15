@@ -4,6 +4,8 @@ import "./App.css";
 import React from 'react';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from './Home/Home';
+import TestingPage from './TestingPage/TestingPage';
+
 // import Explore from './Explore/Explore';
 
 function App() {
@@ -12,6 +14,8 @@ function App() {
       <Routes>
         <Route exact path="/" element={<Home />} />
         {/* <Route path="explore" element={<Explore />} /> */}
+        <Route path="testingpage" element={<TestingPage />} />
+
       </Routes>
     </BrowserRouter>
   );
