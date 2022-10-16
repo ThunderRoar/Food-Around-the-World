@@ -1,6 +1,6 @@
 //import fetch from "node-fetch";
 
-let apiKey = "fb5ed60aac4a4949a4d5770c6bfdd7aa";
+let apiKey = "f99a94f0cb5546e0bfb97124b3aa713e";
 
 export const callFood = async (cuisine, random, intolerances, diet) => {
     var sort;
@@ -10,7 +10,7 @@ export const callFood = async (cuisine, random, intolerances, diet) => {
     let url = "https://api.spoonacular.com/recipes/complexSearch".concat(
     "?apiKey=",apiKey, 
     "&cuisine=",cuisine, 
-    "&includeIngredients&instructionsRequired&number=1",
+    "&includeIngredients&instructionsRequired&number=3",
     "&sort=",sort,
     "&intolerances",intolerances,
     "&diet=",diet);

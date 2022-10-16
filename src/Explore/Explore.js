@@ -1,28 +1,23 @@
 import React from "react";
 
 //Styled Components
-import {
-  BackgroundFillerColor,
-  DescriptionText,
-  MainDiv,
-  MapHolder,
-  Logo,
-} from "./Explore.elements";
 
-import TransparentLogo from "../images/global-grub-high-resolution-logo-transparent-background.png";
+
+import { Modal } from "../Modal/Modal";
 
 const Explore = () => {
+  const [showModal, setShowModal] = useState(false)
+  const [chosenCountry] = useState("Italian")
+  const openModal = () => {
+    setShowModal(prev => !prev)
+  }
+
+  
   return (
     <>
-      <BackgroundFillerColor></BackgroundFillerColor>
-      <MainDiv>
-        <MapHolder></MapHolder>
-        <DescriptionText>
-          Click on a country to uncover the dishes untold.
-        </DescriptionText>
-        {/* Add the map segment here */}
-      </MainDiv>
-      <Logo src={TransparentLogo}></Logo>
+    <h1>Hello World</h1>
+      <button onClick={openModal}>Toggle Me</button>
+      <Modal showModal={showModal} setShowModal={setShowModal} chosenCountry={chosenCountry}></Modal>
     </>
   );
 };
