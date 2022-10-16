@@ -6,14 +6,14 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from './Home/Home';
 import TestingPage from './TestingPage/TestingPage';
 
-// import Explore from './Explore/Explore';
+import Explore from './Explore/Explore';
 
 function App() {
   return (
     <BrowserRouter>
       <Routes>
         <Route exact path="/" element={<Home />} />
-        {/* <Route path="explore" element={<Explore />} /> */}
+        <Route path="explore" element={<Explore />} />
         <Route path="testingpage" element={<TestingPage />} />
 
       </Routes>
