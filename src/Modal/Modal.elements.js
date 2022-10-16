@@ -2,19 +2,23 @@ import styled from "styled-components";
 import { Link } from "react-router-dom";
 import { ImCross } from "react-icons/im";
 
-
 export const ModalContainer = styled.div`
   width: 60%;
   position: absolute;
-  top: 22%;
-  left: 16%;
+  top: 15%;
+  left: 20%;
   display: relative;
   border: 5px solid #333333;
   border-radius: 30px;
   padding: 20px 10px;
+  z-index: 100;
 
-  background: rgb(255,255,255);
-background: radial-gradient(circle, rgba(255,255,255,1) 8%, rgba(157,224,173,1) 100%);
+  background: rgb(255, 255, 255);
+  background: radial-gradient(
+    circle,
+    rgba(255, 255, 255, 1) 8%,
+    rgba(157, 224, 173, 1) 100%
+  );
 `;
 
 export const TopText = styled.h1`
@@ -23,8 +27,7 @@ export const TopText = styled.h1`
   font-size: 50px;
   text-align: center;
   margin: 0;
-  margin-bottom:10px;
-
+  margin-bottom: 10px;
 `;
 
 export const DishDiv = styled.div`
@@ -60,4 +63,4 @@ export const CloseModalButton = styled(ImCross)`
   cursor: pointer;
   position: absolute;
   right: 8px;
-`
+`;
