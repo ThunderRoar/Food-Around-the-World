@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/static/css/main.083a840d.css",
-    "main.js": "/static/js/main.b296bfaf.js",
-    "static/js/787.3f7d12cd.chunk.js": "/static/js/787.3f7d12cd.chunk.js",
-    "static/media/homepage-background.jpeg": "/static/media/homepage-background.9490de39d88874c90835.jpeg",
-    "static/media/global-grub-high-resolution-logo-transparent-background.png": "/static/media/global-grub-high-resolution-logo-transparent-background.f0578863644cdb9c2ff1.png",
-    "index.html": "/index.html",
-    "main.083a840d.css.map": "/static/css/main.083a840d.css.map",
-    "main.b296bfaf.js.map": "/static/js/main.b296bfaf.js.map",
-    "787.3f7d12cd.chunk.js.map": "/static/js/787.3f7d12cd.chunk.js.map"
+    "main.css": "/global-grub/static/css/main.083a840d.css",
+    "main.js": "/global-grub/static/js/main.ad8ac308.js",
+    "static/js/787.3f7d12cd.chunk.js": "/global-grub/static/js/787.3f7d12cd.chunk.js",
+    "static/media/homepage-background.jpeg": "/global-grub/static/media/homepage-background.9490de39d88874c90835.jpeg",
+    "static/media/global-grub-high-resolution-logo-transparent-background.png": "/global-grub/static/media/global-grub-high-resolution-logo-transparent-background.f0578863644cdb9c2ff1.png",
+    "index.html": "/global-grub/index.html",
+    "main.083a840d.css.map": "/global-grub/static/css/main.083a840d.css.map",
+    "main.ad8ac308.js.map": "/global-grub/static/js/main.ad8ac308.js.map",
+    "787.3f7d12cd.chunk.js.map": "/global-grub/static/js/787.3f7d12cd.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.083a840d.css",
-    "static/js/main.b296bfaf.js"
+    "static/js/main.ad8ac308.js"
   ]
 }
