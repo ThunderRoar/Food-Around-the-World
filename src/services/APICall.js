@@ -1,6 +1,6 @@
 //import fetch from "node-fetch";
 
-let apiKey = "f99a94f0cb5546e0bfb97124b3aa713e";
+let apiKey = "5bea5f7eb0cd4eb299be030dbd912455";
 
 export const callFood = async (cuisine, random, intolerances, diet) => {
     var sort;
@@ -24,7 +24,7 @@ export const callFood = async (cuisine, random, intolerances, diet) => {
 export const callRecipe = async (recipe) => {
     let url = "https://api.spoonacular.com/recipes/".concat
     (recipe,"/information?apiKey=", apiKey);
-
+    // console.log(url);
     const response = await fetch(url);
     return (await response.json()); //extract JSON from the http response
   }

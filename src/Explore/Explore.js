@@ -18,16 +18,17 @@ const Explore = () => {
   const [chosenCountry] = useState("Italian");
   const openModal = () => {
     setShowModal((prev) => !prev);
+    console.log(showModal);
   };
 
   return (
     <>
       <button onClick={openModal}>Toggle Me</button>
-      <Modal
+      <Modal>
         showModal={showModal}
         setShowModal={setShowModal}
         chosenCountry={chosenCountry}
-      ></Modal>
+      </Modal>
       <BackgroundFillerColor></BackgroundFillerColor>
       <MainDiv>
         <MapHolder></MapHolder>

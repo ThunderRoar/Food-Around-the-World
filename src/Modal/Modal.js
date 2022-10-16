@@ -18,7 +18,7 @@ export const Modal = ({ showModal, setShowModal, chosenCountry }) => {
   // const animation = useSpring({
   //   duration: 250,
   //   opacity: showModal ? 1 : 1,
-  //   transform: showModal ? `translateY(0%)` : `translateY(0%)`
+  //   transform: showModal ? translateY(0%) : translateY(0%)
   // });
 
   const [dishes, setDishes] = useState();
