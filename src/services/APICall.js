@@ -1,6 +1,6 @@
 //import fetch from "node-fetch";
 
-let apiKey = "5bea5f7eb0cd4eb299be030dbd912455";
+let apiKey = "7ee90e2855734b0fad01e3a56b969ce3";
 
 export const callFood = async (cuisine, random, intolerances, diet) => {
     var sort;
