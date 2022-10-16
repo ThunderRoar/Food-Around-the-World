@@ -1,26 +1,28 @@
-import React, {useState} from "react";
+import React from "react";
 
 //Styled Components
 import {
-  ModalContainer
+  BackgroundFillerColor,
+  DescriptionText,
+  MainDiv,
+  MapHolder,
+  Logo,
 } from "./Explore.elements";
 
-import { GiKnifeFork } from "react-icons/gi";
-// import { Modal } from "./Modal/Modal";
+import TransparentLogo from "../images/global-grub-high-resolution-logo-transparent-background.png";
 
 const Explore = () => {
-  const [showModal, setShowModal] = useState(false)
-
-  const openModal = () => {
-    setShowModal(prev => !prev)
-  }
-
-  
   return (
     <>
-    <h1>Hello World</h1>
-      <button onClick={openModal}>Toggle Me</button>
-      {/* <Modal showModal={showModal} setShowModal={setShowModal}></Modal> */}
+      <BackgroundFillerColor></BackgroundFillerColor>
+      <MainDiv>
+        <MapHolder></MapHolder>
+        <DescriptionText>
+          Click on a country to uncover the dishes untold.
+        </DescriptionText>
+        {/* Add the map segment here */}
+      </MainDiv>
+      <Logo src={TransparentLogo}></Logo>
     </>
   );
 };
