@@ -14,7 +14,7 @@ import {
 
 const Recipe = () => {
     // Hard coded recipe id
-    var temp=642595;
+    var temp=642595; 
 
     const [info, setInfo] = useState({title: "a", summary: "b", image: "a"});
 
@@ -30,7 +30,9 @@ const Recipe = () => {
     console.log(info);
     
     var div = document.createElement("div");
+    var divOne = document.createElement("divOne");
     div.innerHTML = info["summary"];
+    divOne.innerHTML = info["instructions"];
 
     return (
         <>
@@ -43,8 +45,7 @@ const Recipe = () => {
             <center><Image src={info["image"]}></Image></center>
         </ImageDiv>
         <TitleDiv>
-            <Instructions>{info["instructions"]}</Instructions>
-            
+            <Instructions>{divOne.textContent || divOne.innerText || ""}</Instructions>
         </TitleDiv>
         </>
     )
